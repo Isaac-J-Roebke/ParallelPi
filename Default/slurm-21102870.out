@@ -1,0 +1,14 @@
+
+Lmod is automatically replacing "mvapich2/2.3.3" with "openmpi/4.0.3-hpcx".
+
+/var/spool/slurmd/job21102870/slurm_script: line 16: cd: /users/PCS0268/iroebke/cs4170_fa2022_r06_roebke/Default/Default: No such file or directory
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+mpicxx  -I../src -I/usr/local/openmpi/intel/19.0/4.0.3-hpcx/include -I/usr/local/boost/intel/19.0/openmpi/4.0/1.75.0/include -O2 -g -Wall -c -fmessage-length=0 -std=c++17     -L/usr/local/boost/intel/19.0/openmpi/4.0/1.75.0/lib  -lgomp -lmpi -lboost_mpi -lboost_serialization -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: MPI
+Invoking: GCC C++ Linker
+mpicxx  -o "MPI"   ./src/CStopWatch.o  ./src/main.o -L/usr/local/boost/intel/19.0/openmpi/4.0/1.75.0/lib  -lgomp -lmpi -lboost_mpi -lboost_serialization 
+Finished building target: MPI
+ 

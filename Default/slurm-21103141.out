@@ -1,0 +1,35 @@
+
+Lmod is automatically replacing "mvapich2/2.3.3" with "openmpi/4.0.3-hpcx".
+
+
+The following have been reloaded with a version change:
+  1) boost/1.72.0 => boost/1.75.0
+
+/var/spool/slurmd/job21103141/slurm_script: line 16: cd: /users/PCS0268/iroebke/cs4170_fa2022_r06_roebke/Default/Default: No such file or directory
+Building file: ../src/CStopWatch.cpp
+Invoking: GCC C++ Compiler
+mpicxx  -I../src -I/usr/local/openmpi/intel/19.0/4.0.3-hpcx/include -I/usr/local/boost/intel/19.0/openmpi/4.0/1.75.0/include -O2 -g -Wall -c -fmessage-length=0 -std=c++17     -L/usr/local/boost/intel/19.0/openmpi/4.0/1.75.0/lib  -lgomp -lmpi -lboost_mpi -lboost_serialization -MMD -MP -MF"src/CStopWatch.d" -MT"src/CStopWatch.d" -o "src/CStopWatch.o" "../src/CStopWatch.cpp"
+Finished building: ../src/CStopWatch.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+mpicxx  -I../src -I/usr/local/openmpi/intel/19.0/4.0.3-hpcx/include -I/usr/local/boost/intel/19.0/openmpi/4.0/1.75.0/include -O2 -g -Wall -c -fmessage-length=0 -std=c++17     -L/usr/local/boost/intel/19.0/openmpi/4.0/1.75.0/lib  -lgomp -lmpi -lboost_mpi -lboost_serialization -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: MPI
+Invoking: GCC C++ Linker
+mpicxx  -o "MPI"   ./src/CStopWatch.o  ./src/main.o -L/usr/local/boost/intel/19.0/openmpi/4.0/1.75.0/lib  -lgomp -lmpi -lboost_mpi -lboost_serialization 
+Finished building target: MPI
+ 
+slurmstepd: error: *** JOB 21103141 ON o0138 CANCELLED AT 2022-10-21T20:05:41 ***
+--------------------------------------------------------------------------
+ORTE has lost communication with a remote daemon.
+
+  HNP daemon   : [[50585,0],0] on node o0138
+  Remote daemon: [[50585,0],9] on node o0147
+
+This is usually due to either a failure of the TCP network
+connection to the node, or possibly an internal failure of
+the daemon itself. We cannot recover from this failure, and
+therefore will terminate the job.
+--------------------------------------------------------------------------

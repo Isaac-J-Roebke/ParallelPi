@@ -1,0 +1,122 @@
+
+Lmod is automatically replacing "mvapich2/2.3.3" with "openmpi/4.0.3-hpcx".
+
+
+The following have been reloaded with a version change:
+  1) boost/1.72.0 => boost/1.75.0
+
+/var/spool/slurmd/job21103140/slurm_script: line 16: cd: /users/PCS0268/iroebke/cs4170_fa2022_r06_roebke/Default/Default: No such file or directory
+make: Nothing to be done for `OSC'.
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[3240,1],0]
+  Exit code:    127
+--------------------------------------------------------------------------
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+MPI: error while loading shared libraries: libboost_mpi.so.1.72.0: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Open MPI tried to fork a new process via the "execve" system call but
+failed.  Open MPI checks many things before attempting to launch a
+child process, but nothing is perfect. This error may be indicative
+of another problem on the target host, or even something as silly as
+having specified a directory for your application. Your job will now
+abort.
+
+  Local host:        o0419
+  Working dir:       /users/PCS0268/iroebke/cs4170_fa2022_r06_roebke/Default
+  Application name:  /users/PCS0268/iroebke/cs4170_fa2022_r06_roebke/Default/MPI
+  Error:             No such file or directory
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec was unable to start the specified application as it encountered an
+error:
+
+Error code: -125
+Error name: The specified application failed to start
+Node: o0419
+
+when attempting to start process rank 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpiexec command
+      line parameter option (remember that mpiexec interprets the first
+      unrecognized command line token as the executable).
+
+Node:       o0419
+Executable: MPI
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpiexec command
+      line parameter option (remember that mpiexec interprets the first
+      unrecognized command line token as the executable).
+
+Node:       o0419
+Executable: MPI
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpiexec command
+      line parameter option (remember that mpiexec interprets the first
+      unrecognized command line token as the executable).
+
+Node:       o0419
+Executable: MPI
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpiexec command
+      line parameter option (remember that mpiexec interprets the first
+      unrecognized command line token as the executable).
+
+Node:       o0419
+Executable: MPI
+--------------------------------------------------------------------------
